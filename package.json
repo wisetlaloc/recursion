@@ -1,0 +1,14 @@
+{
+  "name": "recursion",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "wisetlaloc <13391342+wisetlaloc@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^7.11.0",
+    "eslint-config-google": "^0.14.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0"
+  }
+}
