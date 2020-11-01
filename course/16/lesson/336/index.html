@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vending Machine</title>
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div class="container py-3">
+    <div class="bg-sky p-3 my-auto">
+      <div class="row mx-0">
+        <div id="slider-container" class="col-12 col-md-8 bg-gray d-flex align-items-center min-height-220">
+          <div class="slider-data d-none">
+            <div class="box slider-item bg-primary"></div>
+            <div class="box slider-item bg-secondary"></div>
+            <div class="box slider-item bg-success"></div>
+            <div class="box slider-item bg-warning"></div>
+            <div class="box slider-item bg-danger"></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 px-0 pr-md-0 pl-md-3 pt-2 pt-md-0">
+          <div class="d-flex flex-column">
+            <div class="bg-green d-flex p-2 mx-0 justify-content-between">
+              <div class="col-3 col-md-4 pl-0 d-flex">
+                <div class="bg-red text-light my-md-auto px-3 text-center" data-selected-num="7">7</div>
+              </div>
+              <div class="col-9 col-md-8 d-flex flex-column">
+                <p class='text-uppercase mb-0 font-md-15r d-flex flex-md-column justify-content-between full-h'>
+                  <span data-selected-name="chips" class='text-uppercase align-middle lh-md-1'>chips</span>
+                  <span class='align-middle lh-md-1' data-selected-price="$4,00">$4,00</span>
+                </p>
+              </div>
+            </div>
+            <div class="bg-green mt-2">
+              <div class="row row-cols-3 text-light mx-0">
+                <div class="col p-2">
+                  <div class='bg-blue text-center c-pointer'>1</div>
+                </div>
+                <div class="col p-2">
+                  <div class='bg-blue text-center c-pointer'>2</div>
+                </div>
+                <div class="col p-2">
+                  <div class='bg-blue text-center c-pointer'>3</div>
+                </div>
+                <div class="col p-2">
+                  <div class='bg-blue text-center c-pointer'>4</div>
+                </div>
+                <div class="col p-2">
+                  <div class='bg-blue text-center c-pointer'>5</div>
+                </div>
+                <div class="col p-2">
+                  <div class='bg-blue text-center c-pointer'>6</div>
+                </div>
+                <div class="col p-2">
+                  <div class='bg-blue text-center c-pointer'>7</div>
+                </div>
+                <div class="col p-2">
+                  <div class='bg-blue text-center c-pointer'>8</div>
+                </div>
+                <div class="col p-2">
+                  <div class='bg-blue text-center c-pointer'>9</div>
+                </div>
+                <div class="col-4 p-2">
+                  <div class="bg-blue text-center c-pointer">C</div>
+                </div>
+                <div class="col-8 p-2">
+                  <div class="bg-blue text-center c-pointer">E</div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="d-flex pt-3">
+      <div class="col-12 col-md-8">
+        <div class="bg-gray text-light text-uppercase text-center c-pointer mx-3" class="c-pointer">push</div>
+      </div>
+    </div>
+  </div>
+  <script type='text/javascript' src="index.js"/></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+:root {
+  --main-bg-color: #05ACEF;
+  --selected-item-num: #F95D62;
+  --keypad-button: #234AFA;
+  --keypad-bg: #B9B7BC;
+  --drop-area-bg: #7A7879;
+}
+
+.bg-sky {
+  background-color: var(--main-bg-color);
+}
+
+.bg-red {
+  background-color: var(--selected-item-num);
+}
+
+.bg-blue {
+  background-color: var(--keypad-button);
+}
+
+.bg-green {
+  background-color: var(--keypad-bg);
+}
+
+.bg-gray {
+  background-color: var(--drop-area-bg);
+}
+
+body {
+  font-size: calc(1rem + 2vw) !important;
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 2rem !important;
+  }
+}
+
+.box{
+  height: 100%;
+  padding: 0 !important;
+  transition: all 2s linear;
+}
+
+.c-pointer{
+  cursor: pointer;
+}
+
+@keyframes deplete {
+  0%{
+      width: 100%;
+      opacity: 1;
+  }
+  100%{
+      width: 0%;
+      opacity: 0;
+  } 
+}
+
+.deplete-animation{
+  animation: deplete 1s linear forwards;
+}
+
+.expand-animation{
+  animation: deplete 1s linear reverse forwards;
+}
+
+.full-width{
+  height: 200px;
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.full-h{
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .font-md-15r {
+    font-size: 1.5rem;
+  }
+}
+
+.font-2r{
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .font-md-15r {
+    line-height: 1.1;
+  }
+}
+
+
+.min-height-220 {
+  min-height: 220px;
+}
+
